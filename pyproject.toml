@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "comfyui-mflux2"
+description = "ComfyUI custom nodes for mflux, including FLUX.2 workflows optimized for Apple Silicon."
+version = "0.1.0"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+  "mflux",
+  "torch",
+  "numpy",
+  "pillow",
+]
+
+[project.urls]
+Homepage = "https://github.com/ecalot/ComfyUI-mflux2"
+Repository = "https://github.com/ecalot/ComfyUI-mflux2"
+# Used by Comfy Registry: https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = "ecalot"
+DisplayName = "ComfyUI-mflux2"
+Icon = "https://raw.githubusercontent.com/ecalot/ComfyUI-mflux2/main/assets/comfyui-mflux2-icon.png"
